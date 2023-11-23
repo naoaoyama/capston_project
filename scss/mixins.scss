@@ -1,0 +1,20 @@
+@mixin backgImg($img){
+  background-image: url($img);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin disFlexC{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexV($direction,$row,$column,$justify,$align) {
+  display: flex;
+  flex-direction: $direction;
+  row-gap: $row;
+  column-gap: $column;
+  justify-content: $justify;
+  align-items: $align;
+}
