@@ -5,9 +5,11 @@
   background-size: cover;
 }
 
-@mixin disFlexC{
+@mixin disFlexC($direction,$row,$column){
   display: flex;
-  flex-direction: column;
+  flex-direction: $direction;
+  row-gap: $row;
+  column-gap: $column;
 }
 
 @mixin flexV($direction,$row,$column,$justify,$align) {
@@ -18,3 +20,4 @@
   justify-content: $justify;
   align-items: $align;
 }
+

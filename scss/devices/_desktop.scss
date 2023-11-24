@@ -1,0 +1,129 @@
+@media (min-width: $media-widthDes) {
+  body {
+    position: absolute;
+    background-color: rgb(255,255,255);
+  }
+
+  // .header {
+  //   border: 1px solid red;
+    
+  // }
+  
+  .nav {
+    width: 100px;
+    height: 100vh;
+    background-color: #e7e3e3;
+    border-right: 3px black solid;
+    position: fixed;
+    top: 0;
+    left: 0px; /* 最初は画面外に配置 */
+    transition: left 0.3s; /* 左の位置を変化させるアニメーション */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .nav--menu__btn {
+    @include disFlexC(column,1.5vh,0vh);
+    
+  }
+
+  .bar-top {
+    width: 30px;
+    height: 1px;        
+    display: block;      
+    background-color: white;
+  }
+  .bar-middle {
+    width: 20px;
+    height: 1px;        
+    display: block;      
+    background-color: white;
+  }
+  .bar-bottom {
+    width: 10px;
+    height: 1px;        
+    display: block;      
+    background-color: white;
+  }
+  
+  .nav--list__wrapper {
+    display: none;
+  }
+
+}
+
+.contents--wrapper {
+  position: absolute;
+  left: 200px;
+}
+
+
+.wrapper {
+  display: flex;
+  padding-top: 10vh;
+  .header--wrapper{
+    // border: solid 1px red;
+    display: flex;
+    column-gap: 10vh;
+    .header--wrapper__left{
+      // border: solid 1px red;
+      @include flexV(column,13vh,0vh,center,center);
+      .header--wrapper__leftImg figure{
+        display: flex;
+        column-gap: 5vh;
+      }
+      .header--wrapper__leftImg img{
+        width: 18vh;
+        height: 22vh;
+        object-fit: cover;
+      }
+      .header--wrapper__leftContents{
+        @include flexV(column,5vh,0vh,0,end);
+        h1,h4 {
+          text-align: right;
+          color: rgb(111,63,6);
+        }
+        h1{
+          font-size: 6vh;
+          letter-spacing: 3px;
+        }
+        button{
+          width: 30vh;
+          height: 8vh;
+          background-color: white;
+          color: rgb(111,63,6);
+          border: rgb(210,182,143) 1px solid;
+          cursor: pointer;
+        }
+        a {
+          color: rgb(111,63,6);
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 2px;
+          font-size: 15px;
+        }
+      }
+    }
+    .header--wrapper__rightImg img {
+      height: 100vh;
+      width: 80vh;
+      object-fit: cover;
+    // border: solid 1px red;
+    }
+  }
+}
+
+
+
+
+
+
+main {
+  border: 1px solid black;
+}
+
+footer {
+  border: 1px solid black;
+}
