@@ -1,7 +1,159 @@
 @media(min-width: $media-widthTab){
-  
-    
-    
-    
+body{
+
+  header{
+    // border: 1px solid red;
+    width: 100%;
+    display: flex;
+    padding-top: 0vh;
+    .header--wrapper__left{
+      align-items: flex-end;
+      
+      // border: 1px solid red;
+      .header--wrapper__leftContents{
+        align-items: flex-end;
+        h1{
+          text-align: right;
+          font-size: 35px;
+        }
+        button{
+          width: 20vh;
+            height: 5vh;
+            font-size: 13px;
+        }
+      }
+      .header--wrapper__leftImg{
+        // width: 50%;
+        img{
+          width: 10vh;
+          height: 10vh;
+        }
+      }
+    }
+    .header--wrapper__rightImg {
+      figure{
+        img{
+          display: flex !important;
+          width: 35vh;
+          height: 35vh;
+          object-fit: cover;
+      // border: 1px solid red;
+
+        }
+      }
+    }
   }
+
+  main{
+    h3 {
+      font-size: 35px;
+    }
+    .products--wrapper {
+    padding-top: 10vh;
+
+      .products--wrapper__img {
+        width: 100%;
+        figure {
+          img {
+            width: 19vh;
+            height: 19vh;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .feature--wrapper {
+      padding-top: 10vh;
+      width: 85%;
+      .feature--contents__wrapper {
+      width: 100%;
+        align-items: center;
+        .feature--wrapper__left {
+          display: flex;
+          img{
+            width: 20vh;
+            height: 40vh;
+            object-fit: cover;
+          }
+        }
+        .feature--wrapper__right {
+          @include disFlexC(column, 2vh, 0vh);
+          figure {
+            img {
+              width: 20vh;
+              height: 20vh;
+              
+            }
+          }
+        }
+      }
+    }
+    .sns--wrapper {
+      padding-top: 10vh;
+      width: 85%;
+      .sns--img {
+        width: 100%;
+        .sns--img__top {
+          :nth-child(1) {
+            width: 10vh;
+            height: 10vh;
+            object-fit: cover;
+          }
+          :nth-child(2) {
+            width: 15vh;
+            height: 15vh;
+            object-fit: cover;
+          }
+          :nth-child(3) {
+            width: 20vh;
+            height: 20vh;
+            object-fit: cover;
+          }
+          :nth-child(4) {
+            width: 15vh;
+            height: 15vh;
+            object-fit: cover;
+          }
+        }
+        .sns--img__bottom {
+          @include flexV(row, 0vh, 1vh, flex-start, flex-start);
+          :nth-child(1) {
+            width: 15vh;
+            height: 15vh;
+            object-fit: cover;
+          }
+          :nth-child(2) {
+            width: 20vh;
+            height: 20vh;
+            object-fit: cover;
+          }
+          :nth-child(3) {
+            width: 15vh;
+            height: 15vh;
+            object-fit: cover;
+          }
+          :nth-child(4) {
+            width: 10vh;
+            height: 10vh;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .contact--wrapper {
+      padding-top: 10vh;
+      width: 85%;
+      @include disFlexC(column, 2vh, 0vh);
+      .contact--contents__wrapper {
+        @include flexV(row, 0vh, 3vh, space-between, 0vh);
+      }
+    }
+  }
+}
+}
+  
+
+  
+  
+
   
