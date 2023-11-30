@@ -1,10 +1,19 @@
 @media (min-width: $media-widthDes) {
   body {
-    
+    display: flex;
     nav {
       padding: 2%;
+      border-right: 1px solid $originalYellow;
+      display: flex;
+      // .nav--logo__img{
+      //   img{
+      //     width: 3vh;
+      //     height: 3vh;
+      //   }
+      // }
     }
     header {
+      padding-top: 10vh;
       column-gap: 5vh;
       .header--wrapper__left {
       width: 50%;
@@ -51,20 +60,20 @@
     main{
       .products--wrapper {
         width: 70%;
-        padding-top: 5vh;
+        padding-top: 3vh;
         @include disFlexC(column, 5vh, 0vh);
         .products--wrapper__img {
           figure {
             img {
-              width: 40vh;
-              height: 40vh;
+              width: 37vh;
+              height: 37vh;
             }
           }
         }
       }
       .aboutUs--wrapper {
         width: 70%;
-        padding-top: 10vh;
+        padding-top: 15vh;
         .aboutUs--contents__wrapper {
           display: flex;
           justify-content: center;
@@ -86,7 +95,7 @@
       .bestSeller--wrapper {
         width: 70%;
         @include disFlexC(column, 5vh, 0vh);
-        padding-top: 5vh;
+        padding-top: 15vh;
 
         .bestSeller--text {
           display: flex;
@@ -126,17 +135,16 @@
           justify-content: space-between;
           display: flex;
           column-gap: 3vh;
-        width: 100%;
           align-items: center;
           .feature--wrapper__left {
             display: flex;
             img{
-              width: 55vh;
-              height: 89vh;
+              width: 50vh;
+              height: 80vh;
             }
           }
           .feature--wrapper__right {
-            width: 55%;
+            width: 50%;
 
             row-gap: 6vh;
             p{
@@ -147,8 +155,8 @@
               display: flex;
               justify-content: space-between;
               img {
-                width: 35vh;
-                height: 43vh;
+                width: 25vh;
+                height: 35vh;
                 
               }
             }
@@ -200,6 +208,7 @@
         }
       }
       .contact--wrapper{
+        width: 70%;
         padding-top: 15vh;
         @include disFlexC(column, 5vh, 0vh);
 

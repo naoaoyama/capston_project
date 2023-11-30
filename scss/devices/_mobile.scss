@@ -7,7 +7,19 @@
     nav {
       padding: 5%;
       .nav--list__wrapper {
-        display: none;
+        .nav--list{
+          ul{
+            display: none;
+            justify-content: space-around;
+            li{
+              list-style-type: none;
+              color: $originalBrown;
+              font-size: 20px;
+            }
+          }
+        }
+        // display: none;
+
       }
       .nav--menu__btn {
         @include disFlexC(column, 1vh, 0vh);
