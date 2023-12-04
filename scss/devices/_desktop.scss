@@ -1,22 +1,35 @@
 @media (min-width: $media-widthDes) {
   body {
+
     display: flex;
     nav {
       padding: 2%;
       border-right: 1px solid $originalYellow;
       display: flex;
-      // .nav--logo__img{
-      //   img{
-      //     width: 3vh;
-      //     height: 3vh;
-      //   }
-      // }
+      height: 100vh;
+      position: fixed;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .nav--logoButton__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        .nav--logo__img {
+          img {
+            display: flex;
+            width: 5vh;
+            height: 5vh;
+          }
+        }
+      }
     }
+
     header {
       padding-top: 10vh;
       column-gap: 5vh;
       .header--wrapper__left {
-      width: 50%;
+        width: 50%;
 
         @include flexV(column, 10vh, 0vh, center, 0);
         .header--wrapper__leftContents {
@@ -34,14 +47,13 @@
             font-size: 15px;
           }
         }
-        .header--wrapper__leftImg figure{
+        .header--wrapper__leftImg figure {
           column-gap: 6vh;
-          
+
           img {
             width: 18vh;
             height: 22vh;
             object-fit: cover;
-
           }
         }
       }
@@ -57,7 +69,7 @@
         }
       }
     }
-    main{
+    main {
       .products--wrapper {
         width: 70%;
         padding-top: 3vh;
@@ -79,7 +91,7 @@
           justify-content: center;
           .aboutUs--text {
             width: 40%;
-            @include flexV(column, 5vh, 0vh,center,center);
+            @include flexV(column, 5vh, 0vh, center, center);
 
             p {
               line-height: 2;
@@ -123,7 +135,6 @@
             }
           }
         }
-       
       }
       .feature--wrapper {
         padding-top: 15vh;
@@ -138,7 +149,7 @@
           align-items: center;
           .feature--wrapper__left {
             display: flex;
-            img{
+            img {
               width: 50vh;
               height: 80vh;
             }
@@ -147,7 +158,7 @@
             width: 50%;
 
             row-gap: 6vh;
-            p{
+            p {
               line-height: 2;
             }
             figure {
@@ -157,7 +168,6 @@
               img {
                 width: 25vh;
                 height: 35vh;
-                
               }
             }
           }
@@ -207,13 +217,11 @@
           }
         }
       }
-      .contact--wrapper{
+      .contact--wrapper {
         width: 70%;
         padding-top: 15vh;
         @include disFlexC(column, 5vh, 0vh);
-
       }
     }
   }
-  
 }
