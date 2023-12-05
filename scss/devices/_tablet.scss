@@ -4,16 +4,17 @@ body{
     // border: 1px solid red;
     width: 100%;
     display: flex;
-    padding-top: 0vh;
+    padding-top: 10vh;
     .header--wrapper__left{
       align-items: flex-end;
-      
-      // border: 1px solid red;
       .header--wrapper__leftContents{
         align-items: flex-end;
         h1{
           text-align: right;
           font-size: 35px;
+        }
+        h4{
+          font-size: 18px;
         }
         button{
           width: 20vh;
@@ -22,10 +23,11 @@ body{
         }
       }
       .header--wrapper__leftImg{
-        // width: 50%;
+        width: 80%;
         img{
           width: 10vh;
           height: 10vh;
+          object-fit: cover;
         }
       }
     }
@@ -36,8 +38,6 @@ body{
           width: 35vh;
           height: 35vh;
           object-fit: cover;
-      // border: 1px solid red;
-
         }
       }
     }
@@ -48,8 +48,8 @@ body{
       font-size: 35px;
     }
     .products--wrapper {
-    padding-top: 10vh;
-
+      padding-top: 10vh;
+      row-gap: 5vh;
       .products--wrapper__img {
         width: 100%;
         figure {
@@ -61,7 +61,22 @@ body{
         }
       }
     }
+    .aboutUs--wrapper {
+      row-gap: 4vh;
+      .aboutUs--contents__wrapper {
+        .aboutUs--text {
+          row-gap: 2vh;
+        }
+      }
+    }
+    .bestSeller--wrapper {
+      padding-top: 10vh;
+      row-gap: 5vh;
+    }
     .feature--wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2vh;
       padding-top: 10vh;
       width: 85%;
       .feature--contents__wrapper {
@@ -71,12 +86,12 @@ body{
           display: flex;
           img{
             width: 20vh;
-            height: 40vh;
+            height: 45vh;
             object-fit: cover;
           }
         }
         .feature--wrapper__right {
-          @include disFlexC(column, 2vh, 0vh);
+          @include disFlexC(column, 3vh, 0vh);
           figure {
             img {
               width: 20vh;
@@ -88,8 +103,10 @@ body{
       }
     }
     .sns--wrapper {
+      row-gap: 5vh;
       padding-top: 10vh;
       width: 85%;
+      row-gap: vh;
       .sns--img {
         width: 100%;
         .sns--img__top {
@@ -142,7 +159,7 @@ body{
     .contact--wrapper {
       padding-top: 10vh;
       width: 85%;
-      @include disFlexC(column, 2vh, 0vh);
+      @include disFlexC(column, 5vh, 0vh);
       .contact--contents__wrapper {
         @include flexV(row, 0vh, 3vh, space-between, 0vh);
       }

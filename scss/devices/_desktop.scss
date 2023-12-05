@@ -3,7 +3,7 @@
 
     display: flex;
     nav {
-      padding: 2%;
+      padding: 4vh;
       border-right: 1px solid $originalYellow;
       display: flex;
       height: 100vh;
@@ -25,203 +25,216 @@
       }
     }
 
-    header {
-      padding-top: 10vh;
-      column-gap: 5vh;
-      .header--wrapper__left {
-        width: 50%;
 
-        @include flexV(column, 10vh, 0vh, center, 0);
-        .header--wrapper__leftContents {
-          width: 70%;
-          @include flexV(column, 5vh, 0vh, center, center);
-
-          align-items: flex-end;
-          h1 {
-            text-align: right;
-            font-size: 45px;
-          }
-          button {
-            width: 30vh;
-            height: 8vh;
-            font-size: 15px;
-          }
-        }
-        .header--wrapper__leftImg figure {
-          column-gap: 6vh;
-
-          img {
-            width: 18vh;
-            height: 22vh;
-            object-fit: cover;
-          }
-        }
-      }
-      .header--wrapper__rightImg {
-        figure {
-          img {
-            display: flex !important;
-            height: 100vh;
-            width: 80vh;
-            object-fit: cover;
-            // border: 1px solid red;
-          }
-        }
-      }
-    }
-    main {
-      .products--wrapper {
-        width: 70%;
-        padding-top: 3vh;
-        @include disFlexC(column, 5vh, 0vh);
-        .products--wrapper__img {
-          figure {
-            img {
-              width: 37vh;
-              height: 37vh;
-            }
-          }
-        }
-      }
-      .aboutUs--wrapper {
-        width: 70%;
-        padding-top: 15vh;
-        .aboutUs--contents__wrapper {
-          display: flex;
-          justify-content: center;
-          .aboutUs--text {
-            width: 40%;
+      header {
+        padding-top: 10vh;
+        column-gap: 5vh;
+        .header--wrapper__left {
+          width: 50%;
+  
+          @include flexV(column, 10vh, 0vh, center, 0);
+          .header--wrapper__leftContents {
+            width: 70%;
             @include flexV(column, 5vh, 0vh, center, center);
-
-            p {
-              line-height: 2;
+  
+            align-items: flex-end;
+            h1 {
+              text-align: right;
+              font-size: 45px;
+            }
+            button {
+              width: 30vh;
+              height: 8vh;
+              font-size: 15px;
             }
           }
-        }
-        img {
-          display: flex;
-          width: 80vh;
-          height: 80vh;
-        }
-      }
-      .bestSeller--wrapper {
-        width: 70%;
-        @include disFlexC(column, 5vh, 0vh);
-        padding-top: 15vh;
-
-        .bestSeller--text {
-          display: flex;
-
-          justify-content: flex-start;
-        }
-        .bestSeller--img {
-          flex-direction: row !important;
-          column-gap: 0vh;
-          justify-content: space-around;
-          figure {
-            @include disFlexC(column, 3vh, 0vh);
-            align-items: center;
-            text-align: center;
-            img {
-              width: 40vh;
-              height: 50vh;
-              object-fit: cover;
-            }
-            figcaption {
-              color: $originalBrown;
-              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-                sans-serif;
-              line-height: 1.5;
-            }
-          }
-        }
-      }
-      .feature--wrapper {
-        padding-top: 15vh;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 5vh;
-        .feature--contents__wrapper {
-          justify-content: space-between;
-          display: flex;
-          column-gap: 3vh;
-          align-items: center;
-          .feature--wrapper__left {
-            display: flex;
-            img {
-              width: 50vh;
-              height: 80vh;
-            }
-          }
-          .feature--wrapper__right {
-            width: 50%;
-
-            row-gap: 6vh;
-            p {
-              line-height: 2;
-            }
+          .header--wrapper__leftImg {
+          width: 70%;
+  
             figure {
-              // width: 90%;
-              display: flex;
-              justify-content: space-between;
+              column-gap: 6vh;
+    
               img {
-                width: 25vh;
-                height: 35vh;
+                width: 18vh;
+                height: 22vh;
+                object-fit: cover;
               }
             }
           }
         }
-      }
-      .sns--wrapper {
-        padding-top: 15vh;
-        width: 70%;
-        .sns--img {
-          width: 100%;
-          .sns--img__top {
-            :nth-child(1) {
-              width: 20vh;
-              height: 20vh;
-            }
-            :nth-child(2) {
-              width: 30vh;
-              height: 30vh;
-            }
-            :nth-child(3) {
-              width: 40vh;
-              height: 40vh;
-            }
-            :nth-child(4) {
-              width: 30vh;
-              height: 30vh;
-            }
-          }
-          .sns--img__bottom {
-            @include flexV(row, 0vh, 1vh, flex-start, flex-start);
-            :nth-child(1) {
-              width: 30vh;
-              height: 30vh;
-            }
-            :nth-child(2) {
-              width: 40vh;
-              height: 40vh;
-            }
-            :nth-child(3) {
-              width: 30vh;
-              height: 30vh;
-            }
-            :nth-child(4) {
-              width: 20vh;
-              height: 20vh;
+        .header--wrapper__rightImg {
+          figure {
+            img {
+              display: flex !important;
+              height: 100vh;
+              width: 80vh;
+              object-fit: cover;
+              // border: 1px solid red;
             }
           }
         }
       }
-      .contact--wrapper {
-        width: 70%;
-        padding-top: 15vh;
-        @include disFlexC(column, 5vh, 0vh);
+      main {
+      padding-left: 13vh;
+
+        .products--wrapper {
+          width: 70%;
+          padding-top: 3vh;
+          @include disFlexC(column, 5vh, 0vh);
+          .products--wrapper__img {
+            figure {
+              img {
+                width: 37vh;
+                height: 37vh;
+              }
+            }
+          }
+        }
+        .aboutUs--wrapper {
+          width: 70%;
+          padding-top: 15vh;
+          .aboutUs--contents__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .aboutUs--text {
+              @include flexV(column, 5vh, 0vh, center, center);
+              width: 100%;
+              h3{
+                width: 100%;
+              }
+              p {
+                line-height: 2;
+              }
+            }
+          }
+          img {
+            display: flex;
+            width: 80vh;
+            height: 70vh;
+            object-fit: cover;
+          }
+        }
+        .bestSeller--wrapper {
+          width: 70%;
+          @include disFlexC(column, 5vh, 0vh);
+          padding-top: 15vh;
+  
+          .bestSeller--text {
+            display: flex;
+            justify-content: flex-start;
+            h3{
+              width: 100%;
+            }
+          }
+          .bestSeller--img {
+            flex-direction: row !important;
+            column-gap: 0vh;
+            justify-content: space-around;
+            figure {
+              @include disFlexC(column, 3vh, 0vh);
+              align-items: center;
+              text-align: center;
+              img {
+                width: 40vh;
+                height: 50vh;
+                object-fit: cover;
+              }
+              figcaption {
+                color: $originalBrown;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                  sans-serif;
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+        .feature--wrapper {
+          padding-top: 15vh;
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 5vh;
+          .feature--contents__wrapper {
+            justify-content: space-between;
+            display: flex;
+            column-gap: 3vh;
+            align-items: center;
+            .feature--wrapper__left {
+              display: flex;
+              img {
+                width: 50vh;
+                height: 80vh;
+              }
+            }
+            .feature--wrapper__right {
+              width: 50%;
+  
+              row-gap: 6vh;
+              p {
+                line-height: 2;
+              }
+              figure {
+                // width: 90%;
+                display: flex;
+                justify-content: space-between;
+                img {
+                  width: 25vh;
+                  height: 35vh;
+                }
+              }
+            }
+          }
+        }
+        .sns--wrapper {
+          padding-top: 15vh;
+          width: 70%;
+          .sns--img {
+            width: 100%;
+            .sns--img__top {
+              :nth-child(1) {
+                width: 20vh;
+                height: 20vh;
+              }
+              :nth-child(2) {
+                width: 30vh;
+                height: 30vh;
+              }
+              :nth-child(3) {
+                width: 40vh;
+                height: 40vh;
+              }
+              :nth-child(4) {
+                width: 30vh;
+                height: 30vh;
+              }
+            }
+            .sns--img__bottom {
+              @include flexV(row, 0vh, 1vh, flex-start, flex-start);
+              :nth-child(1) {
+                width: 30vh;
+                height: 30vh;
+              }
+              :nth-child(2) {
+                width: 40vh;
+                height: 40vh;
+              }
+              :nth-child(3) {
+                width: 30vh;
+                height: 30vh;
+              }
+              :nth-child(4) {
+                width: 20vh;
+                height: 20vh;
+              }
+            }
+          }
+        }
+        .contact--wrapper {
+          width: 70%;
+          padding-top: 15vh;
+          @include disFlexC(column, 5vh, 0vh);
+        }
       }
-    }
   }
 }

@@ -26,7 +26,7 @@
         width: 80%;
         height: 100%;
         @include flexV(column,10vh,0vh,center, center);
-        // display: none;
+        display: none;
         .nav--list{
           ul{
             @include flexV(column,8vh, 0vh, center, 0);
@@ -92,7 +92,7 @@
     }
 
     header {
-      padding-top: 5vh;
+      padding-top: 10vh;
       .header--wrapper__left {
         // border: solid 1px red;
         @include flexV(column, 5vh, 0vh, center, center);
@@ -152,8 +152,6 @@
         text-align: left;
         font-size: 25px;
         background: linear-gradient(transparent 60%, $originalBeige 0%);
-        // text-decoration: underline 4px $originalBeige;
-        // offset: -2px;
       }
       .products--wrapper {
         width: 85%;
@@ -169,8 +167,8 @@
             column-gap: 3vh;
             justify-content: center;
             img {
-              width: 10vh;
-              height: 10vh;
+              width: 45vh;
+              height: 45vh;
               object-fit: cover;
             }
           }
@@ -206,8 +204,6 @@
         padding-top: 5vh;
 
         .bestSeller--text {
-          display: flex;
-
           justify-content: flex-start;
         }
         .bestSeller--img {
@@ -246,6 +242,8 @@
           }
           .feature--wrapper__right {
             @include disFlexC(column, 5vh, 0vh);
+        width: 100%;
+
             p {
               color: $originalGray;
               letter-spacing: 2px;
@@ -255,57 +253,65 @@
             }
             figure {
               display: flex;
-              justify-content: space-between;
+              justify-content: center;
+              column-gap: 1vh;
+              // justify-content: space-between;
             }
             img {
-              width: 18vh;
-              height: 18vh;
+              width: 25vh;
+              height: 25vh;
               object-fit: cover;
             }
           }
         }
       }
       .sns--wrapper {
+        width: 85%;
         padding-top: 10vh;
         @include disFlexC(column, 2vh, 0vh);
+        align-items: center;
+        h3{
+        width: 100%;
+
+        }
         .sns--img {
           @include disFlexC(column, 2vh, 0vh);
           .sns--img__top {
             @include flexV(row, 0vh, 1vh, flex-end, flex-end);
             :nth-child(1) {
-              width: 5vh;
-              height: 5vh;
+              width: 8vh;
+              height: 8vh;
             }
             :nth-child(2) {
-              width: 7.5vh;
-              height: 7.5vh;
+              width: 10vh;
+              height: 10vh;
             }
             :nth-child(3) {
-              width: 9vh;
-              height: 9vh;
+              width: 13vh;
+              height: 13vh;
             }
             :nth-child(4) {
-              width: 7.5vh;
-              height: 7.5vh;
+              width: 10vh;
+              height: 10vh;
             }
           }
           .sns--img__bottom {
             @include flexV(row, 0vh, 1vh, flex-start, flex-start);
             :nth-child(1) {
-              width: 7.5vh;
-              height: 7.5vh;
+              width: 10vh;
+              height: 10vh;
             }
             :nth-child(2) {
-              width: 9vh;
-              height: 9vh;
+              width: 13vh;
+              height: 13vh;
             }
             :nth-child(3) {
-              width: 7.5vh;
-              height: 7.5vh;
+              width: 10vh;
+              height: 10vh;
             }
             :nth-child(4) {
-              width: 5vh;
-              height: 5vh;
+              width: 7.5vh;
+              height: 7.5vh;
             }
           }
         }
