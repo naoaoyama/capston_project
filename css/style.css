@@ -36,30 +36,30 @@ ul {
   body nav .nav--logo__img img {
     display: none;
   }
-  body nav .nav--list__wrapper {
+  body .nav--list__wrapper {
     background-color: #fbfaf8;
     opacity: 0.9;
-    padding-top: 10%;
     padding-bottom: 10%;
     position: fixed;
     z-index: 3;
     top: 0;
-    left: 0;
-    width: 80%;
-    height: 100%;
+    left: -100%;
+    transition: all 0.5s;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
-    row-gap: 10vh;
+    row-gap: 5vh;
     -moz-column-gap: 0vh;
          column-gap: 0vh;
     justify-content: center;
     align-items: center;
-    display: none;
   }
-  body nav .nav--list__wrapper .nav--list ul {
+  body .nav--list__wrapper .nav--list ul {
     display: flex;
     flex-direction: column;
-    row-gap: 8vh;
+    row-gap: 5vh;
     -moz-column-gap: 0vh;
          column-gap: 0vh;
     justify-content: center;
@@ -67,16 +67,20 @@ ul {
     display: flex;
     justify-content: space-around;
   }
-  body nav .nav--list__wrapper .nav--list ul li {
+  body .nav--list__wrapper .nav--list ul li {
     list-style-type: none;
     color: rgb(93, 41, 11);
     font-size: 20px;
   }
-  body nav .nav--list__wrapper .nav--menu__logo img {
+  body .nav--list__wrapper .nav--list ul li a {
+    text-decoration: none;
+    color: rgb(93, 41, 11);
+  }
+  body .nav--list__wrapper .nav--menu__logo img {
     width: 5vh;
     height: 5vh;
   }
-  body nav .nav--list__wrapper .nav--menu__sns {
+  body .nav--list__wrapper .nav--menu__sns {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -85,17 +89,17 @@ ul {
     justify-content: 0;
     align-items: center;
   }
-  body nav .nav--list__wrapper .nav--menu__sns p {
+  body .nav--list__wrapper .nav--menu__sns p {
     font-size: 20px;
   }
-  body nav .nav--list__wrapper .nav--menu__sns img {
+  body .nav--list__wrapper .nav--menu__sns img {
     width: 5vh;
     height: 5vh;
   }
-  body nav .active {
-    display: flex;
+  body .open .nav--list__wrapper {
+    left: 0;
   }
-  body nav .nav--menu__btn {
+  body .nav--hamburger {
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
@@ -104,22 +108,19 @@ ul {
     position: relative;
     z-index: 4;
   }
-  body nav .active {
-    display: none;
-  }
-  body nav .bar-top {
+  body .bar-top {
     width: 40px;
     height: 2px;
     display: block;
     background-color: rgb(210, 182, 143);
   }
-  body nav .bar-middle {
+  body .bar-middle {
     width: 40px;
     height: 2px;
     display: block;
     background-color: rgb(210, 182, 143);
   }
-  body nav .bar-bottom {
+  body .bar-bottom {
     width: 25px;
     height: 2px;
     display: block;
@@ -452,6 +453,96 @@ ul {
   }
 }
 @media (min-width: 700px) {
+  body .nav--list__wrapper {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: center;
+    align-items: center;
+  }
+  body .nav--list__wrapper .nav--list ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: center;
+    align-items: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  body .nav--list__wrapper .nav--list ul li {
+    list-style-type: none;
+    color: rgb(93, 41, 11);
+    font-size: 30px;
+  }
+  body .nav--list__wrapper .nav--menu__logo img {
+    width: 8vh;
+    height: 8vh;
+  }
+  body .nav--list__wrapper .nav--menu__sns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: 0;
+    align-items: center;
+  }
+  body .nav--list__wrapper .nav--menu__sns p {
+    font-size: 30px;
+  }
+  body .nav--list__wrapper .nav--menu__sns img {
+    width: 8vh;
+    height: 8vh;
+  }
+  body .nav--hamburger {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    position: relative;
+    z-index: 4;
+  }
+  body .bar-top {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background-color: rgb(210, 182, 143);
+  }
+  body .bar-middle {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background-color: rgb(210, 182, 143);
+  }
+  body .bar-bottom {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: rgb(210, 182, 143);
+  }
+  body .close .bar-top {
+    transform: rotate(-135deg);
+    top: 12px;
+    position: absolute;
+    transition: 1s;
+  }
+  body .close .bar-middle {
+    opacity: 0;
+    transform: translateX(70px);
+    top: 50px;
+  }
+  body .close .bar-bottom {
+    transform: rotate(135deg);
+    top: 5px;
+    width: 40px;
+    transition: 1s;
+  }
   body header {
     width: 100%;
     display: flex;
@@ -647,15 +738,53 @@ ul {
     align-items: center;
     justify-content: center;
   }
-  body nav .nav--logoButton__wrapper {
+  body .nav--logo__img img {
+    display: flex;
+    width: 5vh;
+    height: 5vh;
+  }
+  body .nav--list__wrapper {
+    row-gap: 5vh;
+    padding-top: 3%;
+  }
+  body .nav--list__wrapper .nav--list ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+    justify-content: center;
+    align-items: 0;
+  }
+  body .nav--list__wrapper .nav--list ul li {
+    font-size: 28px;
+  }
+  body .nav--logoButton__wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
   }
-  body nav .nav--logoButton__wrapper .nav--logo__img img {
+  body .nav--logoButton__wrapper .nav--logo__img {
+    padding-bottom: 10%;
+  }
+  body .nav--logoButton__wrapper .nav--logo__img img {
     display: flex;
     width: 5vh;
     height: 5vh;
+  }
+  body .close .bar-top {
+    top: 10px;
+    position: absolute;
+    transition: 1s;
+  }
+  body .close .bar-middle {
+    opacity: 0;
+    transform: translateX(70px);
+    top: 50px;
+  }
+  body .close .bar-bottom {
+    width: 40px;
+    transition: 1s;
   }
   body header {
     padding-top: 10vh;

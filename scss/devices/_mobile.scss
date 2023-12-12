@@ -14,28 +14,34 @@
           display: none;
         }
       }
+    }
       .nav--list__wrapper {
         background-color: $originalWhite;
         opacity: 0.9;
-        padding-top: 10%;
         padding-bottom: 10%;
         position: fixed;
         z-index: 3;
         top: 0;
-        left: 0;
-        width: 80%;
-        height: 100%;
-        @include flexV(column,10vh,0vh,center, center);
-        display: none;
+        left: -100%;
+        transition: all 0.5s;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s;
+
+        @include flexV(column,5vh,0vh,center, center);
         .nav--list{
           ul{
-            @include flexV(column,8vh, 0vh, center, 0);
+            @include flexV(column,5vh, 0vh, center, 0);
             display: flex;
             justify-content: space-around;
             li{
               list-style-type: none;
               color: $originalBrown;
               font-size: 20px;
+              a{
+                text-decoration: none;
+                color: $originalBrown;
+              }
             }
           }
         }
@@ -57,19 +63,17 @@
         }
       }
 
-      .active{
-        display: flex
+      .open .nav--list__wrapper{
+        left: 0;
       }
-      .nav--menu__btn {
+
+      .nav--hamburger {
         @include disFlexC(column, 1vh, 0vh);
         position: relative;
         z-index: 4;
         
       }
 
-      .active{
-        display: none;
-      }
 
       .bar-top {
         width: 40px;
@@ -89,7 +93,31 @@
         display: block;
         background-color: $originalYellow;
       }
-    }
+
+      //////閉じた後///////
+
+      // .close .bar-top{
+      //   transform: rotate(-135deg);
+      //   top: 8px;
+      //   position: absolute;
+      //   transition: 1s;
+      // }
+  
+      // .close .bar-middle{
+      //   opacity: 0;
+      //   transform: translateX(70px);
+      //   top: 50px;
+      // }
+  
+      // .close .bar-bottom{
+      //   transform: rotate(135deg);
+      //   top: 5px;
+      //   width: 40px;
+      //   transition: 1s;
+
+      // }
+      
+    
 
     header {
       padding-top: 10vh;

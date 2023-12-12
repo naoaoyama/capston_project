@@ -1,5 +1,88 @@
 @media(min-width: $media-widthTab){
 body{
+  
+  .nav--list__wrapper {
+    padding-top: 8%;
+    @include flexV(column,8vh,0vh,center, center);
+    .nav--list{
+      ul{
+        @include flexV(column,5vh, 0vh, center, 0);
+        display: flex;
+        justify-content: space-around;
+        li{
+          list-style-type: none;
+          color: $originalBrown;
+          font-size: 30px;
+        }
+      }
+    }
+    .nav--menu__logo{
+      img{
+        width: 8vh;
+        height: 8vh;
+      }
+    }
+    .nav--menu__sns{
+      @include flexV(column, 3vh,0vh,0, center);
+      p{
+        font-size: 30px;
+      }
+      img{
+        width: 8vh;
+        height: 8vh;
+      }
+    }
+  }
+
+  
+
+  .nav--hamburger {
+    @include disFlexC(column, 1vh, 0vh);
+    position: relative;
+    z-index: 4;
+    
+  }
+
+
+  .bar-top {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background-color: $originalYellow;
+  }
+  .bar-middle {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background-color: $originalYellow;
+  }
+  .bar-bottom {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background-color: $originalYellow;
+  }
+
+  .close .bar-top{
+    transform: rotate(-135deg);
+    top: 12px;
+    position: absolute;
+    transition: 1s;
+  }
+
+  .close .bar-middle{
+    opacity: 0;
+    transform: translateX(70px);
+    top: 50px;
+  }
+
+  .close .bar-bottom{
+    transform: rotate(135deg);
+    top: 5px;
+    width: 40px;
+    transition: 1s;
+
+  }
   header{
     // border: 1px solid red;
     width: 100%;

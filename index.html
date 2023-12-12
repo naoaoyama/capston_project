@@ -10,28 +10,29 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
+    <nav class="nav-wrapper" id="nav-wrapper">
       <div class="nav--logoButton__wrapper">
         <div class="nav--logo__img">
           <img src="./img/cake01.png" alt="" />
         </div>
-        <div class="nav--menu__btn" id="btn">
+        <div class="nav--hamburger" id="js-hamburger">
           <span class="bar bar-top"></span>
           <span class="bar bar-middle"></span>
           <span class="bar bar-bottom"></span>
         </div>
       </div>
-      <div class="nav--list__wrapper">
+      <div class="nav--list__wrapper" id="nav--list__wrapper">
         <div class="nav--menu__logo">
           <a href=""><img src="./img/cake01.png" alt="" /></a>
         </div>
         <div class="nav--list">
           <ul>
-            <li>Home</li>
-            <li>Cakes&Sweets</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Store</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products--wrapper">Cakes&Sweets</a></li>
+            <li><a href="#aboutUs--wrapper">About us</a></li>
+            <li><a href="#bestSeller--wrapper">Best seller</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#contact--wrapper">Store</a></li>
           </ul>
         </div>
         <div class="nav--menu__sns">
@@ -64,7 +65,7 @@
         </div>
       </header>
       <main>
-        <div class="products--wrapper">
+        <div class="products--wrapper" id="products--wrapper">
           <h3>Cakes & Sweets</h3>
           <div class="products--wrapper__img">
             <figure>
@@ -82,7 +83,7 @@
             </figure>
           </div>
         </div>
-        <div class="aboutUs--wrapper">
+        <div class="aboutUs--wrapper" id="aboutUs--wrapper">
           <h3>About us</h3>
           <div class="aboutUs--contents__wrapper">
               <div class="aboutUs--text">
@@ -105,7 +106,7 @@
               </figure>
             </div>
         </div>
-        <div class="bestSeller--wrapper">
+        <div class="bestSeller--wrapper" id="bestSeller--wrapper">
           <div class="bestSeller--text">
             <h3>Best seller & Review</h3>
           </div>
@@ -183,7 +184,7 @@
             </div>
           </a>
         </div>
-        <div class="contact--wrapper">
+        <div class="contact--wrapper" id="contact--wrapper">
           <h3>Contacts</h3>
           <div class="contact--contents__wrapper">
             <div class="contact--phone__wrapper">
