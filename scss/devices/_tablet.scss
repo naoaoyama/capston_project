@@ -43,6 +43,10 @@ body{
     
   }
 
+  .open .nav--list__wrapper{
+    left: 0px;
+  }
+
 
   .bar-top {
     width: 40px;
@@ -85,7 +89,6 @@ body{
   }
   header{
     // border: 1px solid red;
-    width: 100%;
     display: flex;
     padding-top: 10vh;
     .header--wrapper__left{
@@ -134,7 +137,6 @@ body{
       padding-top: 10vh;
       row-gap: 5vh;
       .products--wrapper__img {
-        width: 100%;
         figure {
           img {
             width: 19vh;
@@ -155,6 +157,10 @@ body{
     .bestSeller--wrapper {
       padding-top: 10vh;
       row-gap: 5vh;
+      .side-scroll-list-wrapper{
+        height: 400px;
+        
+      }
     }
     .feature--wrapper {
       display: flex;
@@ -163,7 +169,6 @@ body{
       padding-top: 10vh;
       width: 85%;
       .feature--contents__wrapper {
-      width: 100%;
         align-items: center;
         .feature--wrapper__left {
           display: flex;
@@ -191,7 +196,6 @@ body{
       width: 85%;
       row-gap: vh;
       .sns--img {
-        width: 100%;
         .sns--img__top {
           :nth-child(1) {
             width: 10vh;

@@ -28,7 +28,7 @@ ul {
     height: 20vh;
   }
   body nav {
-    padding: 5%;
+    padding: 3%;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -97,7 +97,7 @@ ul {
     height: 5vh;
   }
   body .open .nav--list__wrapper {
-    left: 0;
+    left: -300px;
   }
   body .nav--hamburger {
     display: flex;
@@ -520,6 +520,9 @@ ul {
     position: relative;
     z-index: 4;
   }
+  body .open .nav--list__wrapper {
+    left: 0px;
+  }
   body .bar-top {
     width: 40px;
     height: 2px;
@@ -556,7 +559,6 @@ ul {
     transition: 1s;
   }
   body header {
-    width: 100%;
     display: flex;
     padding-top: 10vh;
   }
@@ -601,9 +603,6 @@ ul {
     padding-top: 10vh;
     row-gap: 5vh;
   }
-  body main .products--wrapper .products--wrapper__img {
-    width: 100%;
-  }
   body main .products--wrapper .products--wrapper__img figure img {
     width: 19vh;
     height: 19vh;
@@ -620,6 +619,9 @@ ul {
     padding-top: 10vh;
     row-gap: 5vh;
   }
+  body main .bestSeller--wrapper .side-scroll-list-wrapper {
+    height: 400px;
+  }
   body main .feature--wrapper {
     display: flex;
     flex-direction: column;
@@ -628,7 +630,6 @@ ul {
     width: 85%;
   }
   body main .feature--wrapper .feature--contents__wrapper {
-    width: 100%;
     align-items: center;
   }
   body main .feature--wrapper .feature--contents__wrapper .feature--wrapper__left {
@@ -656,9 +657,6 @@ ul {
     padding-top: 10vh;
     width: 85%;
     row-gap: vh;
-  }
-  body main .sns--wrapper .sns--img {
-    width: 100%;
   }
   body main .sns--wrapper .sns--img .sns--img__top :nth-child(1) {
     width: 10vh;
@@ -910,6 +908,9 @@ ul {
          column-gap: 0vh;
     padding-top: 15vh;
   }
+  body main .bestSeller--wrapper .side-scroll-list-wrapper {
+    height: 500px;
+  }
   body main .bestSeller--wrapper .bestSeller--text {
     display: flex;
     justify-content: flex-start;
@@ -919,8 +920,8 @@ ul {
   }
   body main .bestSeller--wrapper .bestSeller--img {
     flex-direction: row !important;
-    -moz-column-gap: 0vh;
-         column-gap: 0vh;
+    -moz-column-gap: 15vh;
+         column-gap: 15vh;
     justify-content: space-around;
   }
   body main .bestSeller--wrapper .bestSeller--img figure {

@@ -162,6 +162,10 @@
           width: 70%;
           @include disFlexC(column, 5vh, 0vh);
           padding-top: 15vh;
+          .side-scroll-list-wrapper{
+            height: 500px;
+            
+          }
   
           .bestSeller--text {
             display: flex;
@@ -172,7 +176,7 @@
           }
           .bestSeller--img {
             flex-direction: row !important;
-            column-gap: 0vh;
+            column-gap: 15vh;
             justify-content: space-around;
             figure {
               @include disFlexC(column, 3vh, 0vh);

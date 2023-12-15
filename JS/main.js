@@ -32,6 +32,14 @@
     x:'0px',
     y:'0px'
   })
+  gsap.fromTo('.header--wrapper__rightImg',1,{
+    x:'100px',
+    // y:'100px'
+  },
+  {
+    x:'0px',
+    y:'0px'
+  })
 
 
 
