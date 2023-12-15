@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="/JS/main.js" defer></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="/JS/main.js" defer></script>
   </head>
   <body>
     <nav class="nav-wrapper" id="nav-wrapper">
@@ -60,7 +60,7 @@
         </div>
         <div class="header--wrapper__rightImg">
           <figure>
-            <img src="./img/cake_headerImg.png" alt="" />
+            <img src="./img/cakeheader.png" alt="" />
           </figure>
         </div>
       </header>
@@ -106,35 +106,47 @@
               </figure>
             </div>
         </div>
-        <div class="bestSeller--wrapper" id="bestSeller--wrapper">
-          <div class="bestSeller--text">
-            <h3>Best seller & Review</h3>
-          </div>
-          <div class="bestSeller--img">
-            <figure class="bestSeller--firstImg">
-              <a href="#"><img src="./img/Banana-Bourbon-Coffee-Cake-Cover.webp" alt="" /></a>
-              <figcaption>
-                “Peanut butter cookies are super cool. Come!”
-                <br />
-                — Bruno (Google Reviews, July 2022)
-              </figcaption>
-            </figure>
-            <!-- <figure>
-              <a href="#"><img src="./img/Best-Brownies-Overhead-Multiples.webp" alt="" /></a>
-              <figcaption>
-                “Peanut butter cookies are super cool. Come!”
-                <br />
-                — Bruno (Google Reviews, July 2022)
-              </figcaption>
-            </figure>
-            <figure>
-              <a href="#"><img src="./img/Vanilla-Cardamom-Cake-Cover.webp" alt="" /></a>
-              <figcaption>
-                “Peanut butter cookies are super cool. Come!”
-                <br />
-                — Bruno (Google Reviews, July 2022)
-              </figcaption>
-            </figure> -->
+        <div class="side-scroll">
+          <div class="bestSeller--wrapper side-scroll-container" id="bestSeller--wrapper">
+            <div class="bestSeller--text">
+              <h3>Best seller & Review</h3>
+            </div>
+            <div class="side-scroll-list-wrapper">
+              <div class="bestSeller--img side-scroll-list">
+                <figure class="side-scroll-item">
+                  <a href="#"><img src="./img/Banana-Bourbon-Coffee-Cake-Cover.webp" alt="" /></a>
+                  <figcaption>
+                    “Peanut butter cookies are super cool. Come!”
+                    <br />
+                    — Bruno (Google Reviews, July 2022)
+                  </figcaption>
+                </figure>
+                <figure class="side-scroll-item">
+                  <a href="#"><img src="./img/Best-Brownies-Overhead-Multiples.webp" alt="" /></a>
+                  <figcaption>
+                    “Peanut butter cookies are super cool. Come!”
+                    <br />
+                    — Bruno (Google Reviews, July 2022)
+                  </figcaption>
+                </figure>
+                <figure class="side-scroll-item">
+                  <a href="#"><img src="./img/Vanilla-Cardamom-Cake-Cover.webp" alt="" /></a>
+                  <figcaption>
+                    “Peanut butter cookies are super cool. Come!”
+                    <br />
+                    — Bruno (Google Reviews, July 2022)
+                  </figcaption>
+                </figure>
+                <figure class="side-scroll-item">
+                  <a href="#"><img src="./img/Vanilla-Cardamom-Cake-Cover.webp" alt="" /></a>
+                  <figcaption>
+                    “Peanut butter cookies are super cool. Come!”
+                    <br />
+                    — Bruno (Google Reviews, July 2022)
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
         <div class="feature--wrapper">
