@@ -904,8 +904,8 @@ ul {
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
-    -moz-column-gap: 0vh;
-         column-gap: 0vh;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
     padding-top: 15vh;
   }
   body main .bestSeller--wrapper .side-scroll-list-wrapper {

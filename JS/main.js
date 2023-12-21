@@ -1,3 +1,5 @@
+'use strict';  
+  
   window.onload = ()=> {
     let nav = document.getElementById('nav-wrapper');
     let hamburger = document.getElementById('js-hamburger');

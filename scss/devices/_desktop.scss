@@ -160,7 +160,7 @@
         }
         .bestSeller--wrapper {
           width: 70%;
-          @include disFlexC(column, 5vh, 0vh);
+          @include disFlexC(column, 5vh, 5vh);
           padding-top: 15vh;
           .side-scroll-list-wrapper{
             height: 500px;
